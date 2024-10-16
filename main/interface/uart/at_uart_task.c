@@ -176,7 +176,7 @@ static void at_uart_init(void)
     g_at_cmd_port = g_uart_port_pin.number;
 
     // install uart driver
-    uart_driver_install(g_at_cmd_port, 1024 * 16, 1024 * 16, 100, &s_at_uart_queue, 0);
+    uart_driver_install(g_at_cmd_port, 1024 * 64, 1024 * 64, 100, &s_at_uart_queue, 0);
 
     // set uart configuration
     uart_config_t config;
